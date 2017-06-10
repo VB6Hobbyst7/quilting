@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StrategyAndCommand.Strategy
 {
-    class GitDeployment : IDeployment
+    class GitDeployment : ISourceControl
     {
         private bool _deploymentCompleted;
 
@@ -37,6 +37,24 @@ namespace StrategyAndCommand.Strategy
             return _deploymentCompleted;
         }
 
- 
+        public bool IsSourceControlCompleted()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetSourceControlCompletedStatus(bool isCompleted)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetupSourceControl()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DoSourceControlWork()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

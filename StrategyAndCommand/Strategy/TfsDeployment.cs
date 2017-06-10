@@ -7,7 +7,7 @@ namespace StrategyAndCommand.Strategy
     class TfsSourceControl : ISourceControl
     {
         private bool _SourceControlCompleted;
-        private Random _rRandomObject
+        private Random _randomObject;
 
         public void Cleanup()
         {
@@ -37,7 +37,5 @@ namespace StrategyAndCommand.Strategy
         {
             return _SourceControlCompleted;
         }
-
- 
     }
 }

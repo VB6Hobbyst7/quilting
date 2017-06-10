@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StrategyAndCommand.Template
+﻿namespace StrategyAndCommand.Template
 {
     public abstract class ReaderTemplate
     {
