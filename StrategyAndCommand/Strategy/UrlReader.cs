@@ -1,28 +1,28 @@
-﻿namespace StrategyAndCommand.Template
+﻿namespace StrategyAndCommand.Strategy
 {
     using System.Net;
 
-    public class UrlReader : ReaderTemplate
+    public class UrlReader : IReader
     {
         WebClient _webClient;
         string _urlSource;
 
-        public override void CloseReader()
+        public void CloseReader()
         {
             _webClient.Dispose();
         }
 
-        public override void OpenReader()
+        public void OpenReader()
         {
             _webClient = new WebClient();
         }
 
-        public override string Read()
+        public string ReadFromSource()
         {
             return _webClient.DownloadString(_urlSource);
         }
 
-        public override void SetReaderSource(string source)
+        public void SetSource(string source)
         {
             _urlSource = source;
         }

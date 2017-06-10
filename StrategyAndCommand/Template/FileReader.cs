@@ -1,5 +1,4 @@
-﻿using System;
-namespace StrategyAndCommand.Template
+﻿namespace StrategyAndCommand.Template
 {
     public class FileReader : ReaderTemplate
     {

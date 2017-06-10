@@ -41,10 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Strategy\DeploymentRunner.cs" />
-    <Compile Include="Strategy\GitDeployment.cs" />
-    <Compile Include="Strategy\ISourceControl.cs" />
-    <Compile Include="Strategy\TfsDeployment.cs" />
+    <Compile Include="Strategy\FileReader.cs" />
+    <Compile Include="Strategy\ReaderRunner.cs" />
+    <Compile Include="Strategy\IReader.cs" />
+    <Compile Include="Strategy\UrlReader.cs" />
     <Compile Include="Template\FileReader.cs" />
     <Compile Include="Template\ReaderTemplate.cs" />
     <Compile Include="Template\UrlReader.cs" />
