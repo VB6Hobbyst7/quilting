@@ -57,8 +57,6 @@
   <ItemGroup>
     <None Include="README.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ActiveObject\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
