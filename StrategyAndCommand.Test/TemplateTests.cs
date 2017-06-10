@@ -1,20 +1,31 @@
 ﻿namespace StrategyAndCommand.Test
 {
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using NUnit.Framework;
     using System.IO;
 
-    [TestClass]
+    [TestFixture]
     public class TemplateTests
     {
-        [TestMethod]
+        [Test]
         public void ReadATextFile()
         {
-            string binDirectory = System.IO.Directory.GetCurrentDirectory();
-            string currentPath = Directory.GetParent(binDirectory).Parent.FullName;
+            string currentPath = TestContext.CurrentContext.TestDirectory;
             string pathToFile = $"{currentPath}\\README.md";
             var fileReader = new StrategyAndCommand.Template.FileReader();
 
             var text = fileReader.ReadFromSource(pathToFile);
+
+            Assert.IsFalse(string.IsNullOrWhiteSpace(text));
+        }
+
+        [Test]
+        public void ReadFromAUrl()
+        {
+            string url = "https://www.google.com";
+            var urlReader = new StrategyAndCommand.Template.UrlReader();
+
+            var text = urlReader.ReadFromSource(url);
+
             Assert.IsFalse(string.IsNullOrWhiteSpace(text));
         }
     }

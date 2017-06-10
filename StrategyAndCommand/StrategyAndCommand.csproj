@@ -47,6 +47,7 @@
     <Compile Include="Strategy\TfsDeployment.cs" />
     <Compile Include="Template\FileReader.cs" />
     <Compile Include="Template\ReaderTemplate.cs" />
+    <Compile Include="Template\UrlReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
