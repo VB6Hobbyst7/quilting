@@ -40,6 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\AddTwo.cs" />
+    <Compile Include="Command\DivideByThree.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\MultiplyByFive.cs" />
+    <Compile Include="Command\Pipeline.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategy\FileReader.cs" />
     <Compile Include="Strategy\ReaderRunner.cs" />
@@ -53,7 +58,7 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Command\" />
+    <Folder Include="ActiveObject\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
